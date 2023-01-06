@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Wt_HA</display-name>
+  <servlet>
+    <servlet-name>s1</servlet-name>
+    <servlet-class>Cookie.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>Cookie.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+     <servlet>
+        <servlet-name>s3</servlet-name>
+        <servlet-class>url.FirstServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s4</servlet-name>
+        <servlet-class>url.SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s3</servlet-name>
+        <url-pattern>/servlet3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s4</servlet-name>
+        <url-pattern>/servlet4</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>s5</servlet-name>
+        <servlet-class>hiddenform.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>s6</servlet-name>
+        <servlet-class>hiddenform.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s5</servlet-name>
+        <url-pattern>/servlet5</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>s6</servlet-name>
+        <url-pattern>/servlet6</url-pattern>
+    </servlet-mapping>
+</web-app>
